@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
  * @description
  * 도움말 시스템을 관리하는 라우트입니다.
  */
-Route::prefix('admin/cms/help')->name('admin.cms.help.')->group(function () {
+Route::prefix('help')->name('admin.cms.help.')->group(function () {
     // Help Center 대시보드
     Route::get('/', \Jiny\Help\Http\Controllers\Admin\Help\Dashboard\IndexController::class)
         ->name('dashboard');
@@ -51,7 +51,7 @@ Route::prefix('admin/cms/help')->name('admin.cms.help.')->group(function () {
  * 자주 묻는 질문(FAQ)을 관리하는 라우트입니다.
  * Single Action Controllers 방식으로 구현됨
  */
-Route::prefix('admin/cms/faq')->name('admin.cms.faq.')->group(function () {
+Route::prefix('faq')->name('admin.cms.faq.')->group(function () {
     // FAQ 카테고리 관리 (Single Action Controllers)
     Route::prefix('categories')->name('categories.')->group(function () {
         Route::get('/', \Jiny\Help\Http\Controllers\Admin\Faq\Categories\IndexController::class)->name('index');
@@ -83,7 +83,7 @@ Route::prefix('admin/cms/faq')->name('admin.cms.faq.')->group(function () {
  * @description
  * 고객 지원 요청을 관리하는 라우트입니다.
  */
-Route::prefix('admin/cms/support')->name('admin.cms.support.')->group(function () {
+Route::prefix('support')->name('admin.cms.support.')->group(function () {
 
     // 메인 대시보드 (Analytics Dashboard)
     Route::get('/', \Jiny\Help\Http\Controllers\Admin\Support\Dashboard\IndexController::class)->name('index');
@@ -205,7 +205,7 @@ Route::prefix('admin/cms/support')->name('admin.cms.support.')->group(function (
  * @description
  * 기술지원 요청 할당 시스템을 관리하는 라우트입니다.
  */
-Route::prefix('admin/support')->name('admin.support.')->group(function () {
+Route::prefix('../support')->name('admin.support.')->group(function () {
     // 내 할당 요청
     Route::get('/requests/my-assignments', \Jiny\Help\Http\Controllers\Admin\Support\Requests\MyAssignmentsController::class)->name('requests.my-assignments');
 

@@ -44,14 +44,20 @@ return new class extends Migration
 
             ## 통계
             $table->integer('total_requests')->default(0); // 총 요청 수
+            $table->integer('pending_requests')->default(0); // 대기 중인 요청 수
+            $table->integer('in_progress_requests')->default(0); // 진행 중인 요청 수
             $table->integer('resolved_requests')->default(0); // 해결된 요청 수
+            $table->integer('closed_requests')->default(0); // 종료된 요청 수
             $table->decimal('avg_resolution_hours', 8, 2)->default(0); // 평균 해결 시간
+            $table->timestamp('last_stats_updated_at')->nullable(); // 마지막 통계 업데이트 시간
 
             ## 인덱스
             $table->index('enable');
             $table->index('code');
             $table->index('sort_order');
             $table->index('default_assignee_id');
+            $table->index(['pending_requests', 'in_progress_requests']);
+            $table->index('last_stats_updated_at');
         });
 
         // 기본 데이터 삽입

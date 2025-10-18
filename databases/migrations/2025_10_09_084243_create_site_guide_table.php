@@ -19,6 +19,8 @@ return new class extends Migration
             $table->longText('content')->nullable()->comment('가이드 내용');
             $table->integer('order')->default(0)->comment('정렬 순서');
             $table->integer('views')->default(0)->comment('조회수');
+            $table->unsignedInteger('likes')->default(0)->comment('좋아요 수');
+            $table->unsignedInteger('dislikes')->default(0)->comment('싫어요 수');
             $table->boolean('enable')->default(true)->comment('활성화 여부');
             $table->timestamp('deleted_at')->nullable()->comment('삭제일시');
             $table->timestamps();

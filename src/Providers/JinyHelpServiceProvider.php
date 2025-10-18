@@ -53,8 +53,9 @@ class JinyHelpServiceProvider extends ServiceProvider
      */
     protected function loadRoutes(): void
     {
-        // Load admin routes with admin middleware
+        // Load admin routes with admin middleware and prefix
         Route::middleware(['web', 'admin'])
+            ->prefix('admin/cms')
             ->group(__DIR__.'/../../routes/admin.php');
 
         // Load web routes

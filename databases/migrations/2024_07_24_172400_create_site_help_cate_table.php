@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('enable')->nullable();
 
             ## 카테고리
-            $table->string('code')->nullable();
+            $table->string('code')->nullable()->unique('unique_help_category_code');
 
             $table->string('icon')->nullable();
             $table->string('title')->nullable();
