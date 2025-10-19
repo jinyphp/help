@@ -1,4 +1,4 @@
-@extends($layout ?? 'jiny-help::layouts.app')
+@extends($layout ?? 'jiny-site::layouts.app')
 
 @section('content')
 <div class="py-8 bg-light">
