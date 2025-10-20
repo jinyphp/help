@@ -1,4 +1,4 @@
-@extends($layout ?? 'jiny-help::layouts.admin.sidebar')
+@extends($layout ?? 'jiny-site::layouts.admin.sidebar')
 
 @section('title', '자동 할당 설정')
 

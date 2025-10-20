@@ -1,4 +1,4 @@
-@extends('jiny-admin::layouts.admin')
+@extends($layout ?? 'jiny-site::layouts.admin.sidebar')
 
 @section('title', '평가 통계 대시보드')
 

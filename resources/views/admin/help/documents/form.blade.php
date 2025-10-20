@@ -1,4 +1,4 @@
-@extends($layout ?? 'jiny-help::layouts.admin.sidebar')
+@extends($layout ?? 'jiny-site::layouts.admin.sidebar')
 
 @section('title', $mode === 'create' ? 'Help 문서 생성' : 'Help 문서 수정')
 

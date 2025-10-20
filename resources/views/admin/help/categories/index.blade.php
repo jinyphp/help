@@ -1,4 +1,4 @@
-@extends($layout ?? 'jiny-help::layouts.admin.sidebar')
+@extends($layout ?? 'jiny-site::layouts.admin.sidebar')
 
 @section('title', 'Help 카테고리 관리')
 

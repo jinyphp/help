@@ -18,7 +18,7 @@ class CreateController extends Controller
     {
         $this->config = [
             'table' => 'site_help_cate',
-            'view' => 'jiny-help::admin.helps.categories.form',
+            'view' => 'jiny-help::admin.help.categories.form',
             'title' => 'Help 카테고리 생성',
             'subtitle' => '새로운 Help 카테고리를 생성합니다.',
             'route_prefix' => 'admin.cms.help.categories',

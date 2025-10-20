@@ -18,7 +18,7 @@ class EditController extends Controller
     {
         $this->config = [
             'table' => 'site_help_cate',
-            'view' => 'jiny-help::admin.helps.categories.form',
+            'view' => 'jiny-help::admin.help.categories.form',
             'title' => 'Help 카테고리 수정',
             'subtitle' => 'Help 카테고리 정보를 수정합니다.',
             'route_prefix' => 'admin.cms.help.categories',

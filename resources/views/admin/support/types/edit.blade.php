@@ -1,4 +1,4 @@
-@extends('jiny-admin::layouts.app')
+@extends($layout ?? 'jiny-site::layouts.admin.sidebar')
 
 @section('content')
 <div class="container-fluid">

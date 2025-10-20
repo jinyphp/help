@@ -16,7 +16,7 @@ class CreateController extends Controller
     public function __construct()
     {
         $this->config = [
-            'view' => 'jiny-help::admin.helps.documents.form',
+            'view' => 'jiny-help::admin.help.documents.form',
             'title' => 'Help 문서 생성',
             'subtitle' => '새로운 Help 문서를 생성합니다.',
         ];

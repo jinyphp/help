@@ -17,7 +17,7 @@ class IndexController extends Controller
     {
         $this->config = [
             'table' => 'site_guide',
-            'view' => 'jiny-help::admin.helps.documents.index',
+            'view' => 'jiny-help::admin.help.documents.index',
             'title' => '가이드 문서 관리',
             'subtitle' => '가이드 문서를 관리합니다.',
             'per_page' => 15,

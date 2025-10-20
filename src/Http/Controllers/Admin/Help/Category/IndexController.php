@@ -18,7 +18,7 @@ class IndexController extends Controller
     {
         $this->config = [
             'table' => 'site_help_cate',
-            'view' => 'jiny-help::admin.helps.categories.index',
+            'view' => 'jiny-help::admin.help.categories.index',
             'title' => 'Help 카테고리 관리',
             'subtitle' => 'Help 카테고리를 관리합니다.',
             'route_prefix' => 'admin.cms.help.categories',

@@ -17,7 +17,7 @@ class EditController extends Controller
     {
         $this->config = [
             'table' => 'site_help',
-            'view' => 'jiny-help::admin.helps.documents.form',
+            'view' => 'jiny-help::admin.help.documents.form',
             'title' => 'Help 문서 관리',
             'subtitle' => '도움말 문서를 관리합니다.',
         ];

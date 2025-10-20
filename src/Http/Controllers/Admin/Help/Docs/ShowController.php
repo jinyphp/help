@@ -39,7 +39,7 @@ class ShowController extends Controller
                 ->with('error', 'Help 문서를 찾을 수 없습니다.');
         }
 
-        return view('jiny-help::admin.helps.documents.show', [
+        return view('jiny-help::admin.help.documents.show', [
             'help' => $help,
             'config' => $this->config,
         ]);
